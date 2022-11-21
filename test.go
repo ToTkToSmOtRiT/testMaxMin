@@ -2,16 +2,9 @@ package main
 
 import "fmt"
 
-var (
-	min   int
-	max   int
-	count int
-)
-
 func maxMin(arr []int) {
 	maxCount := [2]int{0, 0}
 	minCount := [2]int{0, 0}
-	count = 0
 	for i := 0; i < len(arr)-1; i++ {
 		for j := i + 1; j < len(arr); j++ {
 			if arr[j-1] > arr[j] {
